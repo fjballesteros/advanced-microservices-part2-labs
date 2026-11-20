@@ -1,0 +1,13 @@
+{
+  "endpoint": "http://p07-jaeger:4318/v1/traces",
+  "protocol": "http/protobuf",
+  "traces": "otlp",
+  "metrics": "none",
+  "logs": "none",
+  "sampler": "parentbased_always_on",
+  "services": {
+    "inventory": "inventory",
+    "orders": "orders",
+    "api-gateway": "api-gateway"
+  }
+}

@@ -3,10 +3,10 @@ spec:
   template:
     spec:
       topologySpreadConstraints:
-        - maxSkew: null # TODO
-          minDomains: null # TODO
-          topologyKey: null # TODO
-          whenUnsatisfiable: null # TODO
+        - maxSkew: 1 # TODO
+          minDomains: 2 # TODO
+          topologyKey: kubernetes.io/hostname # TODO
+          whenUnsatisfiable: DoNotSchedule # TODO
           labelSelector:
             matchLabels:
-              app.kubernetes.io/name: null # TODO: target Orders
+              app.kubernetes.io/name: orders # TODO: target Orders

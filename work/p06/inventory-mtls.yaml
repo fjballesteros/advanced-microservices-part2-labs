@@ -1,0 +1,12 @@
+# Complete before applying. Keep this name and do not add a namespace.
+# Non-matching selector deliberately prevents selecting every workload.
+apiVersion: security.istio.io/v1
+kind: PeerAuthentication
+metadata:
+  name: inventory-strict-mtls
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: inventory
+  mtls:
+    mode: STRICT # Change as required by each experiment.

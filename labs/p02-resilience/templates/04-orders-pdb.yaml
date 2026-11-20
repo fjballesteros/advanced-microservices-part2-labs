@@ -4,7 +4,7 @@ kind: PodDisruptionBudget
 metadata:
   name: orders-ha-demo
 spec:
-  minAvailable: null # TODO
+  minAvailable: 1 # TODO
   selector:
     matchLabels:
-      app.kubernetes.io/name: null # TODO: target Orders
+      app.kubernetes.io/name: orders # TODO: target Orders

@@ -40,7 +40,7 @@ spec:
               memory: "128Mi"
           env:
             - name: WORKERS
-              value: "2"
+              value: "4"
           command: ["/bin/sh", "-c"]
           args:
             - |

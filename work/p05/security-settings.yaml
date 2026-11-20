@@ -1,0 +1,8 @@
+# Copy to work/p05 and complete the two non-secret identifiers.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: p05-security-settings
+data:
+  OIDC_ISSUER_URI: "https://auth.microservices.training.cloudsecurityinpractice.com/realms/advanced-orders" # TODO: exact issuer from OIDC discovery
+  OIDC_AUDIENCE: "advanced-orders-api" # TODO: audience of the resource server
